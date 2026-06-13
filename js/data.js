@@ -9,9 +9,9 @@ const S = {
   hari:1, slot:0, slotMax:4,
   uang:75000, energi:100, kenyang:100, senang:100,
   place:"rumah",
-  jobLevel:{ tani:1, warung:1, bangun:1 },
+  jobLevel:{ NangkepKuyang:1, warung:1, bangun:1 },
   cinta:0, jadian:false,
-  punyaRumah:false, punyaMotor:false,
+  punyaRumah:false, punyaMobil:false,
   goalTarget:1500000,   // harga rumah impian
 };
 
@@ -20,12 +20,12 @@ const SLOTS = ["Pagi","Siang","Sore","Malam"];
 
 /* Daftar tempat yang bisa dikunjungi */
 const PLACES = {
-  rumah:    { nama:"Rumah",            emoji:"🛏️", indoor:true  },
-  sawah:    { nama:"Sawah",            emoji:"🌾", indoor:false },
-  warung:   { nama:"Warung Bu Inah",   emoji:"🍜", indoor:true  },
-  proyek:   { nama:"Proyek Bangunan",  emoji:"🏗️", indoor:false },
-  taman:    { nama:"Taman Desa",       emoji:"🌳", indoor:false },
-  rumahDia: { nama:"Rumah Sari",       emoji:"💗", indoor:true  },
+  rumah:    { nama:"Home",                  emoji:"🛏️", indoor:true  },
+  sawah:    { nama:"Sawah Terlarang",       emoji:"🌾", indoor:false },
+  warung:   { nama:"Warung Haka Bojess",    emoji:"🍜", indoor:true  },
+  proyek:   { nama:"Proyek Bangunan",       emoji:"🏗️", indoor:false },
+  taman:    { nama:"Taman Cinta",           emoji:"🌳", indoor:false },
+  rumahDia: { nama:"Rumah Mommy Ibeng",     emoji:"💗", indoor:true  },
 };
 
 /* Warna langit untuk tiap slot waktu (Pagi, Siang, Sore, Malam) */
