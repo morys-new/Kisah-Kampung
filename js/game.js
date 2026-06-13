@@ -42,7 +42,7 @@ function render(){
   // target
   let prog, label;
   if(!S.punyaRumah){ label = "Beli rumah sendiri (" + rupiah(S.goalTarget) + ")"; prog = clamp(S.uang / S.goalTarget * 100); }
-  else { label = "Jadian sama Sari 💗"; prog = clamp(S.cinta); }
+  else { label = "Jadian 💗"; prog = clamp(S.cinta); }
   $("goalLabel").textContent = label;
   $("goalBar").style.width = prog + "%";
   $("goalProgress").textContent = Math.floor(prog) + "%";
@@ -60,7 +60,7 @@ function moodText(){
   if(S.energi < 20) return "Capek banget, butuh tidur 😴";
   if(S.kenyang < 25) return "Perutnya keroncongan 😵";
   if(S.senang < 25) return "Lagi bete nih 😔";
-  if(S.jadian) return "Pacaran sama Sari 💞";
+  if(S.jadian) return "Pacaran 💞";
   if(S.punyaRumah) return "Punya rumah sendiri 🏠";
   return "Lagi semangat cari rezeki ✨";
 }
